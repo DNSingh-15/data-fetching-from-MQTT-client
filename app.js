@@ -6,8 +6,8 @@ const fs = require('fs');
 var certFile = fs.readFileSync("./caMqttRoot.pem")
 
 var options = {
-    username: 'agera',
-    password: 'yu&ot2vowiVazIpl=wI=',
+    username: 'username',
+    password: 'abc',
     keepalive: 60,
     reconnectPeriod: 1000,
     ca: certFile,
