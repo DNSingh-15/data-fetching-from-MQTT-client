@@ -3,7 +3,7 @@ const fs = require('fs');
 
 
 // var certFile = fs.readFileSync("/home/hmicro/practice/mqtt_subscriber/subscriber/certs/caMqttRoot.crt");
-var certFile = fs.readFileSync("./caMqttRoot.pem")
+var certFile = fs.readFileSync("pem file path")
 
 var options = {
     username: 'username',
