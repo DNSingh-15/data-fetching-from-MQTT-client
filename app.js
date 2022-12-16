@@ -12,14 +12,14 @@ var options = {
     reconnectPeriod: 1000,
     ca: certFile,
 };
-var client = mqtt.connect('mqtts://scale-mqtt.lifesignals.com:8883', options);
+var client = mqtt.connect('mqtts://url:8883', options);
 
 console.log("starting")
 
 client.on('connect', function () { // When connected
     console.log('connected');
     // subscribe to a topic
-    client.subscribe('stream/facilityGroup/CFGROUP_001/facility/CF1240346198/#', function (err) {
+    client.subscribe('subscribe url', function (err) {
         // console.log(err)
     });
 
